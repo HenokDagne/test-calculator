@@ -1,4 +1,4 @@
-const { add, subtract, multiply, divide, modulus } = require("../src/calculator");
+const { add, subtract, multiply, divide, modulus, average } = require("../src/calculator");
 
 describe("calculator", () => {
   test("adds two numbers", () => {
@@ -23,5 +23,9 @@ describe("calculator", () => {
 
   test("calculates modulus of two numbers", () => {
     expect(modulus(10, 3)).toBe(1);
+  });
+
+  test("calculates average of multiple numbers", () => {
+    expect(average(2, 4, 6)).toBe(4);
   });
 });
