@@ -17,9 +17,17 @@ function divide(a, b) {
   return a / b;
 }
 
+function modulus(a, b) {
+  if (b === 0) {
+    throw new Error("Cannot calculate modulus with zero");
+  }
+  return a % b;
+}
+
 module.exports = {
   add,
   subtract,
   multiply,
-  divide
+  divide,
+  modulus
 };
