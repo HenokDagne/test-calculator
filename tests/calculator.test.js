@@ -19,11 +19,13 @@ describe("calculator", () => {
 
   test("throws when dividing by zero", () => {
     expect(() => divide(10, 0)).toThrow("Cannot divide by zero");
-
-    
   });
 
   test("calculates modulus of two numbers", () => {
     expect(modulus(10, 3)).toBe(1);
+  });
+
+  test("calculates average of multiple numbers", () => {
+    expect(average(2, 4, 6)).toBe(4);
   });
 });
